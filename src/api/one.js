@@ -2,16 +2,16 @@ import React from 'react';
 import axios from 'axios';
 
 
-const url = "https://corona.lmao.ninja/v2/countries/india";
+const url = "https://api.rootnet.in/covid19-in/stats/latest";
 
 
 export const fetchData = async () => {
     try{
-        const {data: {updated,cases,todayCases,deaths,todayDeaths,recovered,active}}= await axios.get(url);
+        const {data: {data,lastRefreshed}}= await axios.get(url);
 
        
 
-        return {updated,cases,todayCases,deaths,todayDeaths,recovered,active};
+        return {data,lastRefreshed};
     }
     catch(error){
 

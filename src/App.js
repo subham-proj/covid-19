@@ -2,8 +2,8 @@ import React from 'react';
 import "./App.css";
 import NavbarPage from './components/header';
 import Disp from './components/card';
-import Store from './components/store';
-import About from './components/about';
+// import Store from './components/store';
+// import About from './components/about';
 import Tablex from './components/table';
 
 
@@ -31,6 +31,7 @@ class App extends React.Component {
       return(
         <div>
         <NavbarPage />
+        
       
         <Container className="disp"><Disp data={data} /></Container>
 

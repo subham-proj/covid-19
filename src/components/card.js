@@ -1,8 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import {Container} from 'react-bootstrap';
 import '../App.css';
 import {Typography,Card,CardContent} from '@material-ui/core';
 import CountUp from 'react-countup';
@@ -19,30 +17,18 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Disp ({data: {updated,cases,todayCases,deaths,todayDeaths,recovered,active} }) {
-  const classes = useStyles();
+function Disp ({data: {data,lastRefreshed} }) {
+    const classes = useStyles();
     
-    if(!updated){
+    if(!data){
         return "Loading..";
     }
-    if(!active){
-        return "Loading..";
-    }
-    if(!cases){
-        return "Loading..";
-    }
-    if(!deaths){
-        return "Loading..";
-    }
-    if(!todayCases){
-        return "Loading..";
-    }
-    if(!todayDeaths){
-        return "Loading..";
-    }
-    if(!recovered){
-        return "Loading..";
-    }
+
+    if(!lastRefreshed){
+      return "Loading..";
+  }
+    
+    
 
 
     
@@ -50,8 +36,8 @@ function Disp ({data: {updated,cases,todayCases,deaths,todayDeaths,recovered,act
 
   return (
       
-    
     <div className={classes.root}>
+      <p>Last Updated : {new Date(lastRefreshed).toDateString()}</p>
       <Grid container spacing={1}>
         <Grid container item xs={12} spacing={1}>
 
@@ -63,11 +49,11 @@ function Disp ({data: {updated,cases,todayCases,deaths,todayDeaths,recovered,act
           Confirmed
         </Typography>
         <Typography variant="h5" component="h2" align="Center" style={{color:"red"}}>
-            <CountUp start={0} end={cases} duration={2} separator="," />
+            <CountUp start={0} end={data.summary.total} duration={2} separator="," />
         </Typography>
        
         <Typography variant="body2" component="p" align="Center" style={{color:"red"}}>
-           + <CountUp start={0} end={todayCases} duration={2} separator="," />
+           {/* + <CountUp start={0} end={todayCases} duration={2} separator="," /> */}
         </Typography>
       </CardContent>
       
@@ -83,11 +69,11 @@ function Disp ({data: {updated,cases,todayCases,deaths,todayDeaths,recovered,act
           Recovered
         </Typography>
         <Typography variant="h5" component="h2" align="Center" style={{color:"rgb(103, 199, 6)"}}>
-            <CountUp start={0} end={recovered} duration={2} separator="," />
+            <CountUp start={0} end={data.summary.discharged} duration={2} separator="," />
         </Typography>
        
         <Typography variant="body2" component="p" align="Center" style={{color:"white"}}>
-          .
+          {/* . */}
         </Typography>
       </CardContent>
       
@@ -102,11 +88,11 @@ function Disp ({data: {updated,cases,todayCases,deaths,todayDeaths,recovered,act
           Deaths
         </Typography>
         <Typography variant="h5" component="h2" align="Center"  >
-            <CountUp start={0} end={deaths} duration={2} separator="," />
+            <CountUp start={0} end={data.summary.deaths} duration={2} separator="," />
         </Typography>
        
         <Typography variant="body2" component="p" align="Center" >
-           + <CountUp start={0} end={todayDeaths} duration={2} separator="," />
+           {/* + <CountUp start={0} end={todayDeaths} duration={2} separator="," /> */}
         </Typography>
       </CardContent>
       
@@ -122,7 +108,7 @@ function Disp ({data: {updated,cases,todayCases,deaths,todayDeaths,recovered,act
       </Grid>
     </div>
     
-    
+      
   );
 }
 
