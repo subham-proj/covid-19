@@ -1,0 +1,54 @@
+.nav-sh{
+    
+    box-shadow: 0px 5px 8px #5F5F5F;
+    background-color: black;
+}
+
+.date-x{
+    /* padding: 20px; */
+    float: right;
+    font-size: 20px;
+}
+
+
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 200%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+.disp{
+    
+    padding-top: 60px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.c1{
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+.c2{
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+.c3{
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+
+
+
+.table-main{
+    
+    margin-top: 40px;
+}
+
