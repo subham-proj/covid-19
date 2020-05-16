@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 
 
-const url = "https://api.rootnet.in/covid19-in/stats/latest";
+const url = "https://api.rootnet.in/covid19-in/unofficial/covid19india.org/statewise";
 
 
 export const fetchData = async () => {

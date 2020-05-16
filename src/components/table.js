@@ -47,7 +47,7 @@ render() {
         
             <Container >
         
-        <Table className="table-main">
+        <Table striped bordered hover  className="table-main">
             
         <thead >
           <tr>

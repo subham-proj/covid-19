@@ -49,7 +49,7 @@ function Disp ({data: {data,lastRefreshed} }) {
           Confirmed
         </Typography>
         <Typography variant="h5" component="h2" align="Center" style={{color:"red"}}>
-            <CountUp start={0} end={data.summary.total} duration={2} separator="," />
+            <CountUp start={0} end={data.total.confirmed} duration={2} separator="," />
         </Typography>
        
         <Typography variant="body2" component="p" align="Center" style={{color:"red"}}>
@@ -69,7 +69,7 @@ function Disp ({data: {data,lastRefreshed} }) {
           Recovered
         </Typography>
         <Typography variant="h5" component="h2" align="Center" style={{color:"rgb(103, 199, 6)"}}>
-            <CountUp start={0} end={data.summary.discharged} duration={2} separator="," />
+            <CountUp start={0} end={data.total.recovered} duration={2} separator="," />
         </Typography>
        
         <Typography variant="body2" component="p" align="Center" style={{color:"white"}}>
@@ -88,7 +88,7 @@ function Disp ({data: {data,lastRefreshed} }) {
           Deaths
         </Typography>
         <Typography variant="h5" component="h2" align="Center"  >
-            <CountUp start={0} end={data.summary.deaths} duration={2} separator="," />
+            <CountUp start={0} end={data.total.deaths} duration={2} separator="," />
         </Typography>
        
         <Typography variant="body2" component="p" align="Center" >
