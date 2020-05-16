@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Disp ({data: {updated,cases,todayCases,deaths,todayDeaths,recovered,active} }) {
-    const classes = useStyles();
+  const classes = useStyles();
     
     if(!updated){
         return "Loading..";
@@ -45,7 +45,7 @@ function Disp ({data: {updated,cases,todayCases,deaths,todayDeaths,recovered,act
     }
 
 
-  
+    
 
 
   return (
