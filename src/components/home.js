@@ -4,7 +4,7 @@ import Disp from './card';
 
 import Tablex from './table';
 import FooterHome from './FooterHome';
-
+import About from './about';
 import { fetchData} from '../api/one';
 
 
@@ -28,7 +28,9 @@ class Home extends React.Component {
             <Container className="disp"><Disp data={data} /></Container> 
         
             <Tablex className="pad-table"/>
+            <About />
             <FooterHome />
+            
         </div>
 
     );

@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 
-function About () {
+function Contact () {
     const classes = useStyles();
   return (
     <div>
@@ -113,7 +113,7 @@ function About () {
   );
 }
 
-export default About;
+export default Contact;
 
 
 

@@ -3,6 +3,7 @@ import React from 'react';
 import {Navbar,Container,Nav}from 'react-bootstrap';
 import "../App.css";
 
+import {Link} from 'react-scroll';
 
 function NavbarPage (){
 
@@ -19,7 +20,9 @@ function NavbarPage (){
       
       <Nav.Link href="#/">Home</Nav.Link>
       <Nav.Link href="#/store">Store</Nav.Link>
-      <Nav.Link href="#/about">Contact</Nav.Link>
+      <Nav.Link><Link to="about" smooth={true} duration={2000} >About</Link></Nav.Link>
+      <Nav.Link href="#/contact">Contact</Nav.Link>
+      
         
       </Nav>
       
