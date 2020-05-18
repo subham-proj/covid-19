@@ -12,12 +12,12 @@ function NavbarPage (){
     
       <Navbar bg="dark" variant="dark" expand="lg" className="nav-sh">
         <Container>
-    <Navbar.Brand href="/">Covid-19 India</Navbar.Brand>
+    <Navbar.Brand href="#/">Covid-19 India</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto">
       
-      <Nav.Link href="/">Home</Nav.Link>
+      <Nav.Link href="#/">Home</Nav.Link>
       <Nav.Link href="#/about">About</Nav.Link>
         
       </Nav>
