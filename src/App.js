@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import {
   CSSTransition,
   TransitionGroup,
@@ -20,7 +20,7 @@ class App extends React.Component {
       
       
       return(
-        <BrowserRouter>
+        <HashRouter>
         <div>
         <NavbarPage />
         
@@ -38,7 +38,7 @@ class App extends React.Component {
             </TransitionGroup>
          
         </div>
-        </BrowserRouter>
+        </HashRouter>
       );
     }
 
