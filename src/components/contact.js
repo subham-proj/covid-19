@@ -6,6 +6,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import Me from '../images/about.jpg';
+import FooterOther from './FooterOther';
 
 const StyledBadge = withStyles((theme) => ({
     badge: {
@@ -56,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
 function About () {
     const classes = useStyles();
   return (
-
+    <div>
     <Container>
     <MDBCard className="my-5 px-4 pb-5">
       <MDBCardBody>
@@ -85,13 +86,16 @@ function About () {
               Web Developer
             </h5>
             <p>
-             Hey there,
-             I am a full stack web developer and CSE undergrad. I have made
-             this Web App using React.js and styling is done by Material-Ui and
-             MDBReact. 
-             This App renders the data using API which takes data from <a href="https://www.mohfw.gov.in/"> mohfw.go.in </a>
-             and updates in every few hour.
+            Hey there,
+            I am a full stack web developer and CSE undergrad. I work as a Freelancer at <a href="https://www.upwork.com/" style={{color: "green"}}><b>Upwork inc.</b></a>,
+            I love designing UI/UX. Right now I am looking for internship to strengthen my portfolio. </p>
+            <p>
+            <strong >Skills :</strong><br></br>
+            <ins><b>Frontend</b></ins> -  HTML, CSS, Bootstrap, javascript, jQuery, React.js <br></br>
+            <ins><b>Backend</b></ins> - PHP, Node.js, Express.js, MYSQl, MongoDB
             </p>
+            <strong>Contact : </strong><p> +91 8961202086</p>
+            <strong>Email : </strong><p> 3133ss32@gmail.com</p>
             
             <div className="social">
             <a href="https://www.facebook.com/shubhu.ak" style={{color: 'black'}}><FacebookIcon fontSize='large'/></a>
@@ -104,6 +108,8 @@ function About () {
 </MDBCardBody>
     </MDBCard>
     </Container>
+    <FooterOther/>
+    </div>
   );
 }
 

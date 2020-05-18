@@ -3,7 +3,7 @@ import {Container} from 'react-bootstrap';
 import Disp from './card';
 
 import Tablex from './table';
-
+import FooterHome from './FooterHome';
 
 import { fetchData} from '../api/one';
 
@@ -27,7 +27,8 @@ class Home extends React.Component {
         <div>
             <Container className="disp"><Disp data={data} /></Container> 
         
-            <Tablex />
+            <Tablex className="pad-table"/>
+            <FooterHome />
         </div>
 
     );

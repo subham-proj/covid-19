@@ -1,3 +1,12 @@
+body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
 
 .nav-sh{
    
@@ -59,20 +68,29 @@
 
 
 .load{
+  height: 90vh;
   justify-content: center;
   align-items: center;
   display: flex;
   padding: 200px;
 }
 
-.about-paper{
-  
-}
 
 .def{
   padding: 20px;
+  
 }
 
-.social{
-  
+.store-st{
+  padding-top: 40px;
+}
+
+.card-store{
+  box-shadow: 0px 8px 18px #5F5F5F;
+}
+
+
+
+.pad-table{
+  padding-bottom: 40px;
 }

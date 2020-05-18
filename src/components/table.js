@@ -50,7 +50,7 @@ render() {
         <Table striped bordered hover className="table-main">
           
         <thead >
-          <tr>
+          <tr >
             
             <th >State</th>
             <th style={{color:"red"}}>Confirmed</th>
