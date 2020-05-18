@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import '../App.css';
 import {Typography,Card,CardContent} from '@material-ui/core';
 import CountUp from 'react-countup';
-import Loading from './loading';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -29,11 +29,6 @@ function Disp ({data: {data,lastRefreshed} }) {
       return "";
   }
     
-    
-
-
-    
-
 
   return (
       

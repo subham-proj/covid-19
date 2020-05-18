@@ -1,6 +1,6 @@
 import React from "react";
 import {Container} from 'react-bootstrap';
-import {  MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn } from "mdbreact";
+import {  MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBView } from "mdbreact";
 import {Badge,Avatar,makeStyles,withStyles} from '@material-ui/core';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -89,7 +89,7 @@ function About () {
              I am a full stack web developer and CSE undeegrad. I have made
              this Web App using React.js and styling is done by Material-Ui and
              MDBReact. 
-             This App renders the data using API which takes data from <a href="#"> mohfw.go.in </a>
+             This App renders the data using API which takes data from <a href="https://www.mohfw.gov.in/"> mohfw.go.in </a>
              and updates in every few hour.
             </p>
             

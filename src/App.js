@@ -1,5 +1,6 @@
 import React from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+
+import {HashRouter, Route, Switch } from 'react-router-dom';
 import {
   CSSTransition,
   TransitionGroup,
@@ -9,7 +10,7 @@ import "./App.css";
 import NavbarPage from './components/header';
 import Home from './components/home';
 import About from './components/about';
-import { Container } from 'react-bootstrap';
+// import { Container } from 'react-bootstrap';
 
 
 
