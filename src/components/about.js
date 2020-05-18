@@ -86,7 +86,7 @@ function About () {
             </h5>
             <p>
              Hey there,
-             I am a full stack web developer and CSE undeegrad. I have made
+             I am a full stack web developer and CSE undergrad. I have made
              this Web App using React.js and styling is done by Material-Ui and
              MDBReact. 
              This App renders the data using API which takes data from <a href="https://www.mohfw.gov.in/"> mohfw.go.in </a>
