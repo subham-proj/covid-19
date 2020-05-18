@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Table,Container} from 'react-bootstrap';
 import "../App.css";
 import axios from 'axios';
+import Loading from './loading';
  
 const API = 'https://api.rootnet.in/covid19-in/unofficial/covid19india.org/statewisen';
 const DEFAULT_QUERY = 'redux';
@@ -39,16 +40,15 @@ render() {
     }
  
     if (isLoading) {
-      return <p>Loading ...</p>;
+      return <Loading/>;
     }
  
     return (
         
-        
-            <Container >
-        
-        <Table striped bordered hover  className="table-main">
-            
+        <Container>
+    
+        <Table striped bordered hover className="table-main">
+          
         <thead >
           <tr>
             
@@ -71,8 +71,9 @@ render() {
         
         
       </Table>
-      
+
       </Container>
+      
      
       
     );
@@ -85,3 +86,8 @@ export default App;
 
 
 // {hits.map(hit =>
+
+
+
+
+

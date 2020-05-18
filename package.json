@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.14",
+    "@material-ui/icons": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -21,8 +22,11 @@
     "react-countup": "^4.3.3",
     "react-dom": "^16.13.1",
     "react-google-location": "^1.2.2",
+    "react-loader-spinner": "^3.1.14",
     "react-scripts": "3.4.1",
-    "react-table": "^7.0.5"
+    "react-table": "^7.0.5",
+    "react-transition-group": "^4.4.1",
+    "use-dark-mode": "^2.3.1"
   },
   "scripts": {
     "predeploy": "npm run build",

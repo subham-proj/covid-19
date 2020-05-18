@@ -1,46 +1,44 @@
 import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import {
+  CSSTransition,
+  TransitionGroup,
+} from 'react-transition-group';
+
 import "./App.css";
 import NavbarPage from './components/header';
-import Disp from './components/card';
-// import Store from './components/store';
-// import About from './components/about';
-import Tablex from './components/table';
-
-
-import { fetchData} from './api/one';
+import Home from './components/home';
+import About from './components/about';
 import { Container } from 'react-bootstrap';
 
 
 
 class App extends React.Component {
-    state ={
-      data: [],
-      
-    }
-    async componentDidMount(){
-      const fetchedData = await fetchData();
-
-      this.setState({data:fetchedData})
-     
-    }
-   
+    
 
     render(){
-      const { data } = this.state;
+      
       
       return(
+        <BrowserRouter>
         <div>
         <NavbarPage />
         
-      
-        <Container className="disp"><Disp data={data} /></Container>
-
-        <Tablex />
-        
-
-         {/* <Store /> */}
-        {/* <About />  */}
+       
+        <TransitionGroup>
+         <CSSTransition timeout={500} classNames="item">
+          <Switch>
+               
+          
+          <Route path="/about" component={About}/>
+          <Route path="/" component={Home}/>
+         
+          </Switch>
+            </CSSTransition>
+            </TransitionGroup>
+         
         </div>
+        </BrowserRouter>
       );
     }
 
