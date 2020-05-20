@@ -19,7 +19,7 @@ function NavbarPage (){
       <Nav className="ml-auto">
       
       <Nav.Link href="#/">Home</Nav.Link>
-      <Nav.Link href="#/store">Store</Nav.Link>
+      
       <Nav.Link><Link to="about" smooth={true} duration={2000} >About</Link></Nav.Link>
       <Nav.Link href="#/contact">Contact</Nav.Link>
       
